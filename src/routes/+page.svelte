@@ -1,5 +1,5 @@
 <script>
-	import GenshinNavBar from "$lib/structure/genshin-nav-bar.svelte";
+	import GenshinNavBar from '$lib/structure/genshin-nav-bar.svelte';
 </script>
 
-<GenshinNavBar/>
+<GenshinNavBar />

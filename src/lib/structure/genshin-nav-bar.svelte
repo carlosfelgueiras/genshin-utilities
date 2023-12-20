@@ -1,15 +1,17 @@
 <script>
-    import { page } from '$app/stores';
-	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from "flowbite-svelte";
+	import { page } from '$app/stores';
+	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
 
-    $: activeUrl = $page.url.pathname;
+	$: activeUrl = $page.url.pathname;
 </script>
 
 <Navbar>
 	<NavBrand>
-		<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Genshin Utilities</span>
+		<span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
+			>Genshin Utilities</span
+		>
 	</NavBrand>
-	<NavHamburger/>
+	<NavHamburger />
 	<NavUl {activeUrl}>
 		<NavLi>
 			<a href="/">Home</a>
