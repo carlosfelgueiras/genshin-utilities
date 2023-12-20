@@ -17,10 +17,10 @@
 			<a href="/" class="hover:text-dark-pearl font-family:Genshin">Home</a>
 		</NavLi>
 		<NavLi class="text-pearl">
-			<a href="/" class="hover:text-dark-pearl">About</a>
+			<a href="/critcalculator" class="hover:text-dark-pearl">Crit Calculator</a>
 		</NavLi>
 		<NavLi class="text-pearl">
-			<a href="/" class="hover:text-dark-pearl">Contact</a>
+			<a href="/" class="hover:text-dark-pearl">About</a>
 		</NavLi>
 	</NavUl>
 </Navbar>

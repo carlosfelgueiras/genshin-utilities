@@ -5,8 +5,7 @@
 
 <GenshinNavBar />
 
-<div class="grid grid-cols-3 gap-6">
+<div class="grid grid-cols-2 gap-6 m-10">
 	<div />
 	<CritCalculator />
-	<div />
 </div>

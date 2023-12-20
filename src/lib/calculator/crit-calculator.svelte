@@ -21,52 +21,102 @@
 <div class="grid grid-cols-1 gap-6">
 	<div class="grid gap-6 grid-cols-1 md:grid-cols-2">
 		<div>
-			<FloatingLabelInput type="number" style="outlined" bind:value={critRate} min="0" step="1">
+			<FloatingLabelInput
+				type="number"
+				style="outlined"
+				classInput="text-golden border-golden"
+				classLabel="bg-dark-sky text-golden"
+				bind:value={critRate}
+				min="0"
+				step="1"
+			>
 				Crit Rate
 			</FloatingLabelInput>
-			<Helper>Your character's Crit Rate, including buffs.</Helper>
+			<Helper class="text-golden">Your character's Crit Rate, including buffs.</Helper>
 		</div>
 
 		<div>
-			<FloatingLabelInput style="outlined" value={displayNumber(optimalCritRate)} disabled>
+			<FloatingLabelInput
+				style="outlined"
+				classInput="text-pearl"
+				classLabel="bg-dark-sky text-pearl"
+				value={displayNumber(optimalCritRate)}
+				disabled
+			>
 				Optimal Crit Rate
 			</FloatingLabelInput>
-			<Helper>The value of Crit Rate that maximises your character's average damage.</Helper>
+			<Helper class="text-dark-pearl"
+				>The value of Crit Rate that maximises your character's average damage.</Helper
+			>
 		</div>
 
 		<div>
-			<FloatingLabelInput type="number" style="outlined" bind:value={critDmg}>Crit DMG</FloatingLabelInput>
-			<Helper>Your character's Crit DMG, including buffs.</Helper>
+			<FloatingLabelInput
+				type="number"
+				style="outlined"
+				classInput="text-golden border-golden"
+				classLabel="bg-dark-sky text-golden "
+				bind:value={critDmg}>Crit DMG</FloatingLabelInput
+			>
+			<Helper class="text-golden">Your character's Crit DMG, including buffs.</Helper>
 		</div>
 
 		<div>
-			<FloatingLabelInput style="outlined" value={displayNumber(optimalCritDmg)} disabled>
+			<FloatingLabelInput
+				style="outlined"
+				classInput="text-pearl"
+				classLabel="bg-dark-sky text-pearl"
+				value={displayNumber(optimalCritDmg)}
+				disabled
+			>
 				Optimal Crit DMG
 			</FloatingLabelInput>
-			<Helper>The value of Crit DMG that maximises your character's average damage.</Helper>
+			<Helper class="text-dark-pearl"
+				>The value of Crit DMG that maximises your character's average damage.</Helper
+			>
 		</div>
 
 		<div>
-			<FloatingLabelInput style="outlined" value={displayNumber(critMultiplier)} disabled>
+			<FloatingLabelInput
+				style="outlined"
+				classInput="text-pearl"
+				classLabel="bg-dark-sky text-pearl"
+				value={displayNumber(critMultiplier)}
+				disabled
+			>
 				Crit Multiplier
 			</FloatingLabelInput>
-			<Helper>The multiplier that represents the average crit contribution to your damage.</Helper>
+			<Helper class="text-dark-pearl"
+				>The multiplier that represents the average crit contribution to your damage.</Helper
+			>
 		</div>
 
 		<div>
-			<FloatingLabelInput style="outlined" value={displayNumber(optimalCritMultiplier)} disabled>
-				Optimal Crit Multiplier
+			<FloatingLabelInput
+				style="outlined"
+				classInput="text-pearl"
+				classLabel="bg-dark-sky text-pearl"
+				value={displayNumber(optimalCritMultiplier)}
+				disabled
+			>
+				Optimal Crit Mult.
 			</FloatingLabelInput>
-			<Helper>
+			<Helper class="text-dark-pearl">
 				The multiplier that represents the optimal average crit contribution to your damage.
 			</Helper>
 		</div>
 	</div>
 
 	<div>
-		<FloatingLabelInput style="outlined" value={displayNumber(critValue)} disabled>
+		<FloatingLabelInput
+			style="outlined"
+			classInput="text-pearl"
+			classLabel="bg-dark-sky text-pearl"
+			value={displayNumber(critValue)}
+			disabled
+		>
 			Crit Value
 		</FloatingLabelInput>
-		<Helper>Crit Value represents the ammount of investment.</Helper>
+		<Helper class="text-dark-pearl">Crit Value represents the ammount of investment.</Helper>
 	</div>
 </div>
