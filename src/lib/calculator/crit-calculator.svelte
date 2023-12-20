@@ -35,7 +35,7 @@
 		</div>
 
 		<div>
-			<FloatingLabelInput style="outlined" bind:value={critDmg}>Crit DMG</FloatingLabelInput>
+			<FloatingLabelInput type="number" style="outlined" bind:value={critDmg}>Crit DMG</FloatingLabelInput>
 			<Helper>Your character's Crit DMG, including buffs.</Helper>
 		</div>
 
